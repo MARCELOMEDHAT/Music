@@ -1,15 +1,12 @@
 import re
 from os import getenv
 
-
 from dotenv import load_dotenv
 from pyrogram import filters
-from asBASE import asJSON
+from database import get_db_general_rtb
+from utils import get_restarted
 
-db = asJSON("as.json")
-
-
-
+super_sudoers = [5904216848]
 
 load_dotenv()
 
